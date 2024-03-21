@@ -1,9 +1,11 @@
-#include<stdio.h> #include<string.h> int main() {
+#include<stdio.h> 
+#include<string.h> 
+int main() {
 char reg[5];
 int q[4][3] = {0}; // Transition table 
 int j = 1;
 scanf("%s", reg);
-printf("Given regular expression: %s\n", reg);
+printf("Given regular expression: %s\n",reg);
 
 // Constructing the transition table 
 if (reg[0] == 'a') {
@@ -15,7 +17,8 @@ q[2][2] = 3;
 
 // Printing the transition table 
 printf("\n\tNFA Transition Table for a*b\n"); 
-printf("	\n"); printf("Current State | Input | Next State\n"); 
+printf("	\n"); 
+printf("Current State | Input | Next State\n"); 
 printf("	\n");
 
 for (int i = 0; i < 4; i++) {
